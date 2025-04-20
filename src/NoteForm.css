@@ -1,0 +1,13 @@
+/* Custom adjustments for small screens */
+@media (max-width: 768px) {
+    .form-group label {
+      font-size: 14px;
+    }
+    .form-control {
+      font-size: 14px;
+    }
+    .btn {
+      font-size: 14px;
+    }
+  }
+  

@@ -1,0 +1,21 @@
+.card {
+  transition: translate ease-in-out 100ms, box-shadow ease-in-out 100ms;
+}
+.card {
+  border: 1px solid rgba(0, 0, 0, 0.1); /* soft gray border */
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  background-color: #ffffff; /* keep it clean and readable */
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover,
+.card:focus {
+  translate: 0 -5px;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
+}

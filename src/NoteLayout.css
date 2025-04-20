@@ -1,0 +1,19 @@
+.note-layout-container h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .note-layout-container p {
+    font-size: 1.1rem;
+  }
+  
+  /* Adjust heading size on small screens */
+  @media (max-width: 768px) {
+    .note-layout-container h1 {
+      font-size: 1.4rem;
+    }
+    .note-layout-container p {
+      font-size: 1rem;
+    }
+  }
+  

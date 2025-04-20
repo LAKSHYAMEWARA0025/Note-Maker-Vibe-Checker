@@ -1,0 +1,44 @@
+/* Responsive Design for EditNote Component */
+@media (max-width: 768px) {
+    .mb-4 {
+      margin-bottom: 1.5rem;
+    }
+  
+    .note-form {
+      padding: 1rem; /* Add padding for form fields on mobile */
+    }
+  
+    .note-form input,
+    .note-form textarea {
+      font-size: 1rem;  /* Adjust font size for better readability */
+      padding: 0.8rem;  /* Add padding for touch targets */
+      width: 100%;      /* Make inputs take the full width */
+    }
+  
+    .note-form button {
+      padding: 0.6rem 1rem;  /* Adjust button padding for mobile */
+      font-size: 1.1rem;  /* Increase button font size slightly */
+    }
+  
+    h1 {
+      font-size: 1.5rem;  /* Adjust header font size */
+      text-align: center;  /* Center align header for mobile */
+    }
+  
+    .note-form label {
+      font-size: 1rem;  /* Adjust label font size for mobile */
+    }
+  
+    /* If using a grid for tags, make sure it wraps well */
+    .tag-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+  
+    .tag-container .badge {
+      font-size: 0.9rem; /* Adjust the badge font size for tags */
+      padding: 0.4rem 0.6rem;
+    }
+  }
+  
