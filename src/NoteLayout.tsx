@@ -5,7 +5,7 @@ import {
   useParams,
 } from "react-router-dom";
 import { Note } from "./App";
-import { Row, Col } from "react-bootstrap";  // Added bootstrap grid classes
+// import { Row, Col } from "react-bootstrap";  // Added bootstrap grid classes
 import './NoteLayout.css'
 type NoteLayoutProps = {
   notes: Note[];
