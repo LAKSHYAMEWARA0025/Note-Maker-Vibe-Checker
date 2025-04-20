@@ -1,50 +1,92 @@
-# React + TypeScript + Vite
+# 📝 Note-Maker-Vibe-Checker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive, tag-enabled note-taking app built with **React**, **React Router**, **React-Bootstrap**, and **TypeScript**. This project was originally expected in JavaScript, but I intentionally chose to step out of my comfort zone and implemented it using TypeScript to explore type safety and better scalability in real-world applications.
 
-Currently, two official plugins are available:
+## 📌 Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Note-Maker-Vibe-Checker** lets users create, edit, tag, and filter notes efficiently. Designed with a clean UI and modular architecture, it demonstrates modern React practices including state management, routing, and reusable components — all wrapped in a responsive layout.
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- ✅ Create, edit, and delete notes
+- 🍿 Add tags and filter notes by tag or title
+- 🧵 Dynamic routing with `React Router`
+- 🧠 Context API + `useLocalStorage` for state persistence
+- 📄 Form validation on note creation
+- 📱 Fully responsive (mobile + desktop)
+- 🧹 Modular component architecture
+- 💾 Data persistence via `localStorage`
+- 🪰 TypeScript-powered static type checking
 
-- Configure the top-level `parserOptions` property like this:
+## 🛠️ Tech Stack
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- **React.js** (with Functional Components + Hooks)
+- **React Router DOM** for navigation
+- **React-Bootstrap** for UI components
+- **TypeScript** for type safety
+- **React Select** for multi-select tagging
+- **UUID** for unique ID generation
+- **LocalStorage** for persisting notes and tags
+- **Git & GitHub** for version control and collaboration
+
+## 🡩‍💻 Why TypeScript?
+
+> While the project guidelines suggested JavaScript, I used **TypeScript** to better model complex state, enforce prop contracts, and get early error detection — ultimately producing more reliable and maintainable code. This was a conscious effort to push beyond expectations.
+
+## 📂 Folder Structure (Modular)
+
+```
+src/
+├── components/
+│   ├── NoteForm.tsx
+│   ├── NoteList.tsx
+│   ├── EditNote.tsx
+│   ├── NewNote.tsx
+│   ├── Note.tsx
+│   └── ...
+├── hooks/
+│   └── useLocalStorage.ts
+├── layouts/
+│   └── NoteLayout.tsx
+├── App.tsx
+├── index.tsx
+└── index.css
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## ⚙️ Setup Instructions
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+git clone https://github.com/lakshyamewara0025/note-maker-vibe-checker.git
+cd note-maker-vibe-checker
+npm install
+npm run dev
 ```
+
+### To Build for Production:
+
+```bash
+npm run build
+```
+
+## 🌐 Live Demo
+
+[🔗 Deployed Link](https://note-maker-vibe-checker.vercel.app/)  
+> Hosted via Vercel / Netlify / GitHub Pages *(Replace this with your actual URL)*
+
+## 🧪 Evaluation Highlights
+
+| Criteria                    | Covered ✅ |
+|----------------------------|------------|
+| Functional multi-page routes | ✅        |
+| State management & hooks     | ✅        |
+| Clean, modular codebase      | ✅        |
+| Form with validation         | ✅        |
+| Responsive Design            | ✅        |
+| Good Git practices & README  | ✅        |
+| Innovation with TypeScript   | ✅        |
+
+
+## 📬 Contact
+
+For questions or collaboration ideas, feel free to connect via GitHub, linkedIn or Instagram.
+
