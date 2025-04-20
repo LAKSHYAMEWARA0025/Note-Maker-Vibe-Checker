@@ -71,7 +71,7 @@ npm run build
 ## 🌐 Live Demo
 
 [🔗 Deployed Link](https://note-maker-vibe-checker.vercel.app/)  
-> Hosted via Vercel / Netlify / GitHub Pages *(Replace this with your actual URL)*
+> Hosted via Vercel
 
 ## 🧪 Evaluation Highlights
 
